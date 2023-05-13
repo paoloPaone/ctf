@@ -5,8 +5,8 @@ from django.db import transaction, IntegrityError
 from django.views.generic import ListView
 from django.shortcuts import render, redirect
 from django.conf import settings
-from django.utils.safestring import mark_safe
-from django.utils.translation import ugettext as _
+from django.utils.safestring import mark_safemake
+from django.utils.translation import gettext as _
 from django.contrib import messages
 from django.contrib.auth import logout, get_user_model
 from django.contrib.auth.decorators import login_required
